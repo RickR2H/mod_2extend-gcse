@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2014 R2H B.V. (http://www.r2h.nl). All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+-->
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>2Extend - Google Custom Search Element</name>
+	<author>Rick Spaan</author>
+	<creationDate>August 2014</creationDate>
+	<copyright>Copyright (c) 2014 2extend-gcse. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>rick@r2h.nl</authorEmail>
+	<authorUrl>http://www.r2h.nl</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+	<h4>Google Custom Search Element</h4>
+    <p>Go to: <a href="https://www.google.com/cse/create/new" target="_blank">Webmaster Tools Google Custom Search page</a> to create a key.</p>
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_2extend-gcse">mod_2extend-gcse.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<media folder="media" destination="mod_2extend-gcse">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_2extend-gcse.ini</language>
+		<language tag="en-GB">en-GB.mod_2extend-gcse.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic">
+                	<field
+					name="gcsekey"
+					type="text"
+					default=""
+					label="Custom Search Key"
+					description="Add the Google Custom Search API key" />
+            </fieldset>
+			
+			<fieldset name="options"
+				label="Options">                                 
+			<field name="gcsestyle" 
+					type="filelist" 
+					default="black.css" 
+					label="Select a file" 
+					description="" 
+					directory="media/mod_2extend-gcse/css" 
+					filter="\.css" 
+					exclude="" 
+					stripext="" />
+			
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+				>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

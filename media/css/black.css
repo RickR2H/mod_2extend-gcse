@@ -1,0 +1,73 @@
+/**
+ * @copyright	Copyright (c) 2014 R2H B.V. (http://www.r2h.nl). All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+ 
+div.gsearch input.gsc-search-button, 
+div.gsearch input.gsc-search-button:hover, 
+div.gsearch input.gsc-search-button:focus {
+  -webkit-box-shadow: none !important;
+  -moz-box-sizing: content-box !important;
+  box-shadow: none !important;
+}
+
+div.gsearch input[type="text"].gsc-input, 
+div.gsearch input[type="text"]:focus.gsc-input, 
+.gsc-input-box, 
+.gsc-input-box-hover, 
+.gsc-input-box-focus {
+  box-sizing: content-box !important;
+  line-height: normal !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+div.gsearch .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+    padding: 6px 6px !important;
+	margin-top: 0 !important;
+}
+
+div.gsearch .gsc-search-box-tools .gsc-search-box .gsc-input {
+    padding-right: 0 !important;
+}
+
+div.gsearch input.gsc-search-button {
+    margin-left: 0 !important;
+}
+
+div.gsearch table.gsc-search-box td {
+    vertical-align: top !important;
+}
+
+.gsib_a {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    padding-top: 2px !important;
+}
+
+div.gsearch input.gsc-input, 
+div.gsearch .gsc-input-box {
+    border-color: #000000 !important;
+}
+ 
+div.gsearch .gsc-input-box-hover, 
+div.gsearch .gsc-input-box-focus {
+    border-color: #000000 !important;
+}
+
+div.gsearch input.gsc-search-button {
+    background-color: #000000 !important;
+    background-image: none !important;
+    border-color: #000000 !important;
+    filter: none !important;
+}
+
+div.gsearch input.gsc-search-button:hover, 
+div.gsearch input.gsc-search-button:focus {
+    background-color: #000000 !important;
+    background-image: none !important;
+    border-color: #000000 !important;
+    filter: none !important;
+}
+
+
