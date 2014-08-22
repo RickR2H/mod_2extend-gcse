@@ -25,9 +25,6 @@ JHtml::_('stylesheet', 'mod_2extend-gcse/' . $gcsestyle . '', array(), true);
 ?>
 
 <div class="gsearch">
-werwerwer
-<?php echo $gcsestyle; ?>
-sdfsdfsdf
 <script>
   (function() {
     var cx = '<?php echo $gcsekey; ?>';
